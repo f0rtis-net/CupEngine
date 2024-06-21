@@ -1,0 +1,3 @@
+/Users/ivankaravaev/CupEngine/cmake-build-debug/CMakeFiles/CupEngine.dir
+/Users/ivankaravaev/CupEngine/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ivankaravaev/CupEngine/cmake-build-debug/CMakeFiles/rebuild_cache.dir
