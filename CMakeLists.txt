@@ -23,7 +23,13 @@ link_libraries(${SDL_LIB})
 
 
 # Execute compilation command
-set(SOURCE_FILES main.cpp
-        eventManager/EventManager.h
-        eventManager/impl/SdlEventManagerTest.h)
+set(SOURCE_FILES src/main.cpp
+        src/eventManager/EventManager.h
+        src/eventManager/impl/SdlEventManagerTest.h
+        src/windowService/window.h
+        src/windowService/windowFabric.cpp
+        src/windowService/windowFabric.h
+        src/windowService/impl/SDL_WindowImpl.cpp
+        src/windowService/impl/SDL_WindowImpl.h
+        src/windowService/impl/SdlWindowConfig.h)
 add_executable(CupEngine ${SOURCE_FILES})

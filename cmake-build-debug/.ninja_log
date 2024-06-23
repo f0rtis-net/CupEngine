@@ -1,5 +1,18 @@
 # ninja log v5
-5	2412	1718993110835433701	CMakeFiles/CupEngine.dir/main.cpp.o	c367d59e41201c26
-2413	2644	1718993111069639550	CupEngine	9e55a11f247a42c
 6	2144	1718993489004537666	CMakeFiles/CupEngine.dir/main.cpp.o	6974c628507c7f8b
-2144	2222	1718993489089279574	CupEngine	55a553ecc00aa4f6
+1740	1815	1719169366605919743	CupEngine	e99723cb40df17be
+6	1740	1719169366524747977	CMakeFiles/CupEngine.dir/src/main.cpp.o	6a69b4f8efabb306
+7	2128	1719169350110568856	CMakeFiles/CupEngine.dir/src/windowService/windowFabric.cpp.o	8e282a91d423a684
+7	2129	1719169350110794456	CMakeFiles/CupEngine.dir/src/windowService/impl/SDL_WindowImpl.cpp.o	ba6c7fe4ccb98551
+6	2241	1719171688153191276	CMakeFiles/CupEngine.dir/src/windowService/windowFabric.cpp.o	8e282a91d423a684
+6	2243	1719171688153200851	CMakeFiles/CupEngine.dir/src/windowService/impl/SDL_WindowImpl.cpp.o	ba6c7fe4ccb98551
+5	2245	1719171688161392790	CMakeFiles/CupEngine.dir/src/main.cpp.o	6a69b4f8efabb306
+2245	2331	1719171688253965147	CupEngine	e99723cb40df17be
+10	2586	1719172930326612437	CMakeFiles/CupEngine.dir/src/windowService/windowFabric.cpp.o	8e282a91d423a684
+11	2588	1719172930326611922	CMakeFiles/CupEngine.dir/src/windowService/impl/SDL_WindowImpl.cpp.o	ba6c7fe4ccb98551
+9	2804	1719172930550268412	CMakeFiles/CupEngine.dir/src/main.cpp.o	6a69b4f8efabb306
+2804	2889	1719172930639888599	CupEngine	e99723cb40df17be
+8	2793	1719173012840172862	CMakeFiles/CupEngine.dir/src/main.cpp.o	6a69b4f8efabb306
+2794	2882	1719173012938030120	CupEngine	e99723cb40df17be
+8	2656	1719173171893834336	CMakeFiles/CupEngine.dir/src/main.cpp.o	6a69b4f8efabb306
+2656	2742	1719173171988591377	CupEngine	e99723cb40df17be
