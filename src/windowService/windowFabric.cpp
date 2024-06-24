@@ -8,8 +8,10 @@
 #include "impl/SDL_WindowImpl.h"
 
 IWindow* CWindowFabric::getRealisation() {
-    if(this->rednererName == "sdl")
-        return new SDL_WindowImpl(new SdlWindowConfig{"cupEngine", 500, 500, SDL_WINDOW_OPENGL});
+    if(this->rednererName == "sdl") {
+        auto config = std::make_unique<SdlWindowConfig>( SdlWindowConfig{"cupEngine", 500, 500, SDL_WINDOW_OPENGL});
+        return new SDL_WindowImpl(std::move(config));
+    }
 
     std::cerr << "Got invalid type for implementation: " << this->rednererName << std::endl;
     exit(1);

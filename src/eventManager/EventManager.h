@@ -12,9 +12,9 @@ public:
     virtual ~IEventContext() = default;
 };
 
-class IEventListener {
+class IEventManager {
 public:
-    virtual ~IEventListener() = default;
+    virtual ~IEventManager() = default;
     virtual void notify(IEventContext* event) = 0;
     virtual void registerHandler(std::function<void(IEventContext*)> handler) = 0;
     virtual void unregisterHandler(std::function<void(IEventContext*)> handler) = 0;

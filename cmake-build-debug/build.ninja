@@ -70,6 +70,13 @@ build CMakeFiles/CupEngine.dir/src/windowService/impl/SDL_WindowImpl.cpp.o: CXX_
   OBJECT_DIR = CMakeFiles/CupEngine.dir
   OBJECT_FILE_DIR = CMakeFiles/CupEngine.dir/src/windowService/impl
 
+build CMakeFiles/CupEngine.dir/src/render/impl/OpenGLSDLRender.cpp.o: CXX_COMPILER__CupEngine_unscanned_Debug /Users/ivankaravaev/CupEngine/src/render/impl/OpenGLSDLRender.cpp || cmake_object_order_depends_target_CupEngine
+  DEP_FILE = CMakeFiles/CupEngine.dir/src/render/impl/OpenGLSDLRender.cpp.o.d
+  FLAGS = -g -std=gnu++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/ivankaravaev/CupEngine/deps/includes -F/Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/System/Library/Frameworks
+  OBJECT_DIR = CMakeFiles/CupEngine.dir
+  OBJECT_FILE_DIR = CMakeFiles/CupEngine.dir/src/render/impl
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CupEngine
@@ -78,7 +85,7 @@ build CMakeFiles/CupEngine.dir/src/windowService/impl/SDL_WindowImpl.cpp.o: CXX_
 #############################################
 # Link the executable CupEngine
 
-build CupEngine: CXX_EXECUTABLE_LINKER__CupEngine_Debug CMakeFiles/CupEngine.dir/src/main.cpp.o CMakeFiles/CupEngine.dir/src/windowService/windowFabric.cpp.o CMakeFiles/CupEngine.dir/src/windowService/impl/SDL_WindowImpl.cpp.o | /Users/ivankaravaev/CupEngine/deps/lib/glew/libGLEW.2.2.0.dylib /Users/ivankaravaev/CupEngine/deps/lib/sdl/libSDL2-2.0.0.dylib
+build CupEngine: CXX_EXECUTABLE_LINKER__CupEngine_Debug CMakeFiles/CupEngine.dir/src/main.cpp.o CMakeFiles/CupEngine.dir/src/windowService/windowFabric.cpp.o CMakeFiles/CupEngine.dir/src/windowService/impl/SDL_WindowImpl.cpp.o CMakeFiles/CupEngine.dir/src/render/impl/OpenGLSDLRender.cpp.o | /Users/ivankaravaev/CupEngine/deps/lib/glew/libGLEW.2.2.0.dylib /Users/ivankaravaev/CupEngine/deps/lib/sdl/libSDL2-2.0.0.dylib
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
   LINK_LIBRARIES = -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker OpenGL  /Users/ivankaravaev/CupEngine/deps/lib/glew/libGLEW.2.2.0.dylib  /Users/ivankaravaev/CupEngine/deps/lib/sdl/libSDL2-2.0.0.dylib
   OBJECT_DIR = CMakeFiles/CupEngine.dir

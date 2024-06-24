@@ -25,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 35,
+				"line" : 38,
 				"parent" : 0
 			},
 			{
@@ -71,7 +71,8 @@
 			[
 				0,
 				4,
-				6
+				6,
+				10
 			]
 		}
 	],
@@ -124,7 +125,8 @@
 			[
 				0,
 				4,
-				6
+				6,
+				10
 			]
 		},
 		{
@@ -136,7 +138,9 @@
 				3,
 				5,
 				7,
-				8
+				8,
+				9,
+				11
 			]
 		}
 	],
@@ -155,7 +159,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "src/eventManager/impl/SdlEventManagerTest.h",
+			"path" : "src/eventManager/impl/SdlEventManager.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -188,6 +192,22 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/windowService/impl/SdlWindowConfig.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/render/BasicRender.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/render/impl/OpenGLSDLRender.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/render/impl/OpenGLSDLRender.h",
 			"sourceGroupIndex" : 1
 		}
 	],

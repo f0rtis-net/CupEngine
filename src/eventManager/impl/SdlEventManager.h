@@ -2,8 +2,8 @@
 // Created by Иван Караваев on 21.06.2024.
 //
 
-#ifndef CUPENGINE_SDLEVENTMANAGERTEST_H
-#define CUPENGINE_SDLEVENTMANAGERTEST_H
+#ifndef CUPENGINE_SDLEVENTMANAGER_H
+#define CUPENGINE_SDLEVENTMANAGER_H
 #include "../EventManager.h"
 #include "SDL2/SDL.h"
 #include <list>
@@ -11,10 +11,11 @@
 class SDLEventContext : public IEventContext {
 public:
     SDL_Event* sdlEvent;
-    explicit SDLEventContext(SDL_Event* event) : sdlEvent(event) {}
+    bool& windowOpened;
+    explicit SDLEventContext(SDL_Event* event, bool& windowOpened) : sdlEvent(event), windowOpened(windowOpened) {}
 };
 
-class CSDLEventManagerTest : public IEventListener {
+class CSDLEventManager : public IEventManager {
     std::list< std::function<void(IEventContext*)> > handlers;
 public:
     void notify(IEventContext* event) override {
@@ -31,4 +32,4 @@ public:
     }
 };
 
-#endif //CUPENGINE_SDLEVENTMANAGERTEST_H
+#endif //CUPENGINE_SDLEVENTMANAGER_H

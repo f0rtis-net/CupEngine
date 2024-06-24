@@ -13,18 +13,18 @@
 
 
 class SDL_WindowImpl : public IWindow {
-    SDL_Window* windowHandler = nullptr;
-    SdlWindowConfig* config;
+    std::shared_ptr<SDL_Window> windowHandler;
+    std::unique_ptr<SdlWindowConfig> config;
     bool windowIsOpened;
-    IRenderer* renderer = nullptr;
-    IEventListener* listener = nullptr;
+    std::shared_ptr<IRenderer> renderer;
+    std::shared_ptr<IEventManager> manager;
 public:
-    explicit SDL_WindowImpl(SdlWindowConfig* config);
+    explicit SDL_WindowImpl(std::unique_ptr<SdlWindowConfig> config);
     ~SDL_WindowImpl();
     void open() override;
     void close() override;
-    void setEventListener(IEventListener* listener) override;
-    void setRender(IRenderer* render) override;
+    void setEventManager(std::shared_ptr<IEventManager> manager) override;
+    void setRender(std::shared_ptr<IRenderer> render) override;
     void resizeTo(int width, int height) override;
     void renderCycle(std::function<void()> renderCode) override;
 };

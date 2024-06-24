@@ -7,21 +7,15 @@
 
 #include <functional>
 #include "../eventManager/EventManager.h"
-
-class IRenderer {
-public:
-    virtual ~IRenderer() {}
-    virtual void initialize(void* window) = 0;
-    virtual void render(std::function<void()> renderCode) = 0;
-};
+#include "../render/BasicRender.h"
 
 class IWindow {
 public:
     virtual void open() = 0;
     virtual void close() = 0;
     virtual void resizeTo(int width, int height) = 0;
-    virtual void setEventListener(IEventListener* listener) = 0;
-    virtual void setRender(IRenderer* render) = 0;
+    virtual void setEventManager(std::shared_ptr<IEventManager> manager) = 0;
+    virtual void setRender(std::shared_ptr<IRenderer> render) = 0;
     virtual void renderCycle(std::function<void()> renderCode) = 0;
 };
 
